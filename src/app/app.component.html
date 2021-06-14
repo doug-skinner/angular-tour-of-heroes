@@ -1,6 +1,9 @@
-<h1>{{ title }}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <span class="menu-spacer"></span>
+  <div class="menu-links-container">
+    <a class="menu-link" routerLink="/dashboard">Dashboard</a>
+    <a class="menu-link" routerLink="/heroes">Heroes</a>
+  </div>
+</mat-toolbar>
 <router-outlet></router-outlet>

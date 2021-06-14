@@ -1,0 +1,15 @@
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-link {
+  text-decoration: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: #ffffff;
+}
