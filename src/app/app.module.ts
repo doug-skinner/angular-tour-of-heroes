@@ -6,6 +6,10 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
@@ -15,6 +19,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { AddHeroDialogComponent } from './add-hero-dialog/add-hero-dialog.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
+    AddHeroDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,10 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     }),
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatCardModule,
+    MatTableModule,
+    MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
