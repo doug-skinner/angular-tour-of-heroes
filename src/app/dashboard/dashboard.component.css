@@ -1,0 +1,35 @@
+.heroes-page-header {
+  background-color: #3f51b5;
+}
+
+.heroes-page-header-label {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-top-heroes-label {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #3f51b5;
+}
+
+.heroes-menu {
+  max-width: 50%;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  flex-basis: 40%;
+  max-width: 250px;
+  margin: auto;
+  margin-bottom: 2rem;
+}

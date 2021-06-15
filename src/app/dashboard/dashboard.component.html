@@ -1,9 +1,29 @@
-<h2>Top Heroes</h2>
-
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id }}">
-    {{ hero.name }}
-  </a>
+<div class="heroes-page-header">
+  <h1 class="heroes-page-header-label">Dashboard</h1>
 </div>
 
-<app-hero-search></app-hero-search>
+<div class="dashboard-container">
+  <div class="heroes-menu">
+    <h2 class="dashboard-top-heroes-label">Top Heroes</h2>
+    <div *ngFor="let hero of heroes" class="hero-card">
+      <mat-card class="mat-elevation-z2">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ hero.name }}</mat-card-title>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="https://st3.depositphotos.com/6672868/13701/v/600/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+          alt="placeholder image"
+        />
+        <mat-card-content> </mat-card-content>
+        <mat-card-actions>
+          <a routerLink="/detail/{{ hero.id }}">
+            <button mat-button>DETAILS</button>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  <app-hero-search></app-hero-search>
+</div>

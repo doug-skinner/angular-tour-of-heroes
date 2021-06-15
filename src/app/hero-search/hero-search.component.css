@@ -1,0 +1,16 @@
+#search-component {
+  width: 100%;
+}
+
+.search-label {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #3f51b5;
+}
+
+.search-form {
+  padding-left: 1rem;
+}
